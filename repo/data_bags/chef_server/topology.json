@@ -1,9 +1,9 @@
 {
   "id": "topology",
   "topology": "tier",
-  "api_fqdn": "chef-reference.chef.co",
-  "analytics_fqdn": "analytics-reference.chef.co",
-  "supermarket_fqdn": "supermarket-reference.chef.co",
-  "compliance_fqdn": "compliance-reference.chef.co",
-  "notification_email": "eng-services@chef.io"
+  "api_fqdn": "chef.testing.paperlesspost.net",
+  "analytics_fqdn": "analytics.testing.paperlesspost.net",
+  "supermarket_fqdn": "supermarket.testing.paperlesspost.net",
+  "compliance_fqdn": "compliance.testing.paperlesspost.net",
+  "notification_email": "ops@paperlesspost.com"
 }
