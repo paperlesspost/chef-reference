@@ -1,11 +1,11 @@
 desc 'Make everything happen'
 task default: %i(server-backend server-frontend analytics supermarket compliance) do
-  sh('chef provision --no-policy --recipe cluster -c .chef/config.rb')
+  sh('chef provision --cookbook paperless-provision --no-policy --recipe cluster -c .chef/config.rb')
 end
 
 desc 'Provision development cluster'
 task dev: %i(server-backend server-frontend analytics supermarket compliance) do
-  sh('chef provision --no-policy --recipe dev -c .chef/config.rb')
+  sh('chef provision --cookbook paperless-provision --no-policy --recipe dev -c .chef/config.rb')
 end
 
 %w(server-backend server-frontend analytics supermarket compliance).each do |role|
